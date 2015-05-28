@@ -36,16 +36,16 @@ Usage:
 ./DFExtract [options] <BAM file>
 <table>
 <tr><td>Options</td><td>Description</td><td>Defualt</td><td>value</td></tr>
-<tr><td>-h, --help</td><td>give help information</td><td>--</td></tr>
-<tr><td>-M, --male</td><td>to indicate sample from a male</td><td>--</td></tr>
-<tr><td>-w, --window</td><td>set the size of windows</td><td>1000</td></tr>
-<tr><td>-Q, --baseQ</td><td>threshold value for base quality</td><td>10</td></tr>
-<tr><td>-q, --mapQ</td><td>threshold value for mapping quality</td><td>20</td></tr>
-<tr><td>-d, --minDepth</td><td>minimum read depth for a position to be considered</td><td>10</td></tr>
-<tr><td>-s, --snp</td><td>SNP file</td><td>--</td></tr>
-<tr><td>-r, --reference</td><td>genome reference file(.fasta)</td><td>--</td></tr>
-<tr><td>-m, --mappability</td><td>mappability file(.bw)</td><td>--</td></tr>
-<tr><td>-o, --output</td><td>output file</td><td>--</td></tr>
+<tr><td>-h,</td><td>--help</td><td>give help information</td><td>--</td></tr>
+<tr><td>-M,</td><td>--male</td><td>to indicate sample from a male</td><td>--</td></tr>
+<tr><td>-w,</td><td>--window</td><td>set the size of windows</td><td>1000</td></tr>
+<tr><td>-Q,</td><td>--baseQ</td><td>threshold value for base quality</td><td>10</td></tr>
+<tr><td>-q,</td><td>--mapQ</td><td>threshold value for mapping quality</td><td>20</td></tr>
+<tr><td>-d,</td><td>--minDepth</td><td>minimum read depth for a position to be considered</td><td>10</td></tr>
+<tr><td>-s,</td><td>--snp</td><td>SNP file</td><td>--</td></tr>
+<tr><td>-r,</td><td>--reference</td><td>genome reference file(.fasta)</td><td>--</td></tr>
+<tr><td>-m,</td><td>--mappability</td><td>mappability file(.bw)</td><td>--</td></tr>
+<tr><td>-o,</td><td>--output</td><td>output file</td><td>--</td></tr>
 </table>
 Example:
 ./DFExtract -M -w 1000 -Q 10 -q 20 -d 5 -s hg18_snp130_1based.txt -r Homo_sapiens_assembly18.fasta -m wgEncodeCrgMapabilityAlign36mer.bw tumor.bam > tumor.out
