@@ -34,17 +34,19 @@ A Mappability file formatted as .bw is needed to calculate mappability scores, f
 You should now have all the files needed to run DFExtract.
 Usage:
 ./DFExtract [options] <BAM file>
-|Options	|Description	|Defualt |value|
-|-h, --help	|give help information	|--|
-|-M, --male	|to indicate sample from a male	|--|
-|-w, --window	|set the size of windows	|1000|
-|-Q, --baseQ	|threshold value for base quality	|10|
-|-q, --mapQ	|threshold value for mapping quality	|20|
-|-d, --minDepth	|minimum read depth for a position to be considered	|10|
-|-s, --snp	|SNP file	|--|
-|-r, --reference	|genome reference file(.fasta)	|--|
-|-m, --mappability	|mappability file(.bw)	|--|
-|-o, --output	|output file	|--|
+<table>
+<tr><td>Options</td><td>Description</td><td>Defualt</td><td>value</td></tr>
+<tr><td>-h, --help</td><td>give help information</td><td>--</td></tr>
+<tr><td>-M, --male</td><td>to indicate sample from a male</td><td>--</td></tr>
+<tr><td>-w, --window</td><td>set the size of windows</td><td>1000</td></tr>
+<tr><td>-Q, --baseQ</td><td>threshold value for base quality</td><td>10</td></tr>
+<tr><td>-q, --mapQ</td><td>threshold value for mapping quality</td><td>20</td></tr>
+<tr><td>-d, --minDepth</td><td>minimum read depth for a position to be considered</td><td>10</td></tr>
+<tr><td>-s, --snp</td><td>SNP file</td><td>--</td></tr>
+<tr><td>-r, --reference</td><td>genome reference file(.fasta)</td><td>--</td></tr>
+<tr><td>-m, --mappability</td><td>mappability file(.bw)</td><td>--</td></tr>
+<tr><td>-o, --output</td><td>output file</td><td>--</td></tr>
+</table>
 Example:
 ./DFExtract -M -w 1000 -Q 10 -q 20 -d 5 -s hg18_snp130_1based.txt -r Homo_sapiens_assembly18.fasta -m wgEncodeCrgMapabilityAlign36mer.bw tumor.bam > tumor.out
 ./DFExtract -w 1000 -Q 10 -q 20 -d 5 -s hg18_snp130_1based.txt -r Homo_sapiens_assembly18.fasta -m wgEncodeCrgMapabilityAlign36mer.bw -o tumor.out tumor.bam
